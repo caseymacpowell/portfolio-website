@@ -1,11 +1,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var mongod = require('mongodb');
+var mongodb = require('mongodb');
 var ObjectID  = require('mongodb').ObjectId;
 
 var db;
 
-mongodb.MongoClient.connect('mongob://localhost', function(err, database){
+mongodb.MongoClient.connect('mongodb://localhost', function(err, database){
 	if (err) {
 		console.log(err);
 		return;
@@ -17,7 +17,7 @@ mongodb.MongoClient.connect('mongob://localhost', function(err, database){
 
 var app = express();
 
-app.use(bodyparser.json());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
