@@ -15,13 +15,16 @@ var myRouter = new VueRouter({
 		{
 			path: '/',  //localhost:3000/#
 			component: {
-				template: '<h1>Hello there!</h1>'
+				template: '<h1 id="dashboard">Hello there!</h1>'
 			}
 		},
 		{
 			path: '/about',
 			component: {
-				template: '<p>about</p>',
+				template: `
+					<div id="about">
+						<h1>HELLO!</h1>
+					</div>`,
 			},
 		},
 		{
