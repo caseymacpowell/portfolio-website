@@ -15,7 +15,7 @@ var myRouter = new VueRouter({
 		{
 			path: '/',  //localhost:3000/#
 			component: {
-				template: '<h1 id="dashboard">Hello there!</h1>'
+				template: `<h1 id="dashboardHeader">Hi there!</h1>`
 			}
 		},
 		{

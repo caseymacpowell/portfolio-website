@@ -10,33 +10,51 @@
 	</head>
 	<body>
 		<style>
-			#dashboard {
+			#dashboardHeader {
 				font-family: 'Sacramento', cursive;
 			}
+			body, html {
+				height: 100%;
+				margin: 0;
+			}
+			.bg-image {
+				/* The image used */
+				background-image: url("IMG_4551.png");
+
+				/* Full height */
+				height: 100%; 
+
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 		</style>
-		<!-- App -->
-		<div id="app">
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<router-link to="/">Home</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link to="/about">About Me</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link to="/resume">Resume</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link to="/portfolio">Portfolio</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link to="/blog">Blog</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link to="/contact">Contact</router-link>
-				</li>
-			</ul>
-			<router-view></router-view>
+		<div class="bg-image">
+			<!-- App -->
+			<div id="app">
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<router-link to="/">Home</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link to="/about">About Me</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link to="/resume">Resume</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link to="/portfolio">Portfolio</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link to="/blog">Blog</router-link>
+					</li>
+					<li class="nav-item">
+						<router-link to="/contact">Contact</router-link>
+					</li>
+				</ul>
+				<router-view></router-view>
+			</div>
 		</div>
 
 		<!-- Scripts -->
